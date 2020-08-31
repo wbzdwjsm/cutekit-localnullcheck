@@ -71,11 +71,7 @@ java code:
         s = new ArrayList();  
         System.out.println(s);
         s = invoke(); 
-        if (s == null) {
-            throw new NullPointerException("List:s cannot be null!");
-        } else {
-            System.out.println(s);
-        }
+        System.out.println(s);
     }
 ```
 ### (1): It means "When invoking a mothod to assign the returned value to s and null occurs, reassign local variable s using "new CopyOnWriteArrayList()".
